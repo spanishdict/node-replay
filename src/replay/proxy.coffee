@@ -88,7 +88,7 @@ class ProxyRequest extends HTTP.ClientRequest
       setImmediate(callback)
 
   end: (data, encoding, callback)->
-    assert !@ended, "Already called end"
+    # assert !@ended, "Already called end"
 
     if (typeof data == 'function')
       [callback, data] = [data, null]
